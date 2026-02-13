@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically if needed */
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 30px 50px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.counter {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  text-align: center; /* Center text horizontally */
+  width: 100%; /* Ensure it takes full width to center properly */
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  padding: 12px 35px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #007bff;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  background: #0056b3;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+}
